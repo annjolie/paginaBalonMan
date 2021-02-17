@@ -1,0 +1,32 @@
+.container {
+    display: grid;
+    height: calc(100vh - 2em);
+    grid-template-rows: 20% 1em auto 1em 20%;
+    grid-template-columns: 20% 1em auto 1em 20%;
+    grid-template-areas: "header header header header header" ". . . . ." "nav .  main . aside" ". . . . ." "footer footer footer footer footer ";
+}
+
+.container>header {
+    grid-area: header;
+    background-color: red;
+}
+
+.container>nav {
+    grid-area: nav;
+    background-color: grey;
+}
+
+.container>section {
+    grid-area: main;
+    background-color: black;
+    color: white;
+}
+
+.container>aside {
+    grid-area: aside;
+    background-color: green;
+}
+
+.container>footer {
+    grid-area: footer;
+}
