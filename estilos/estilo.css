@@ -30,3 +30,59 @@
 .container>footer {
     grid-area: footer;
 }
+
+@media screen and (max-width: 590px) {
+    .container {
+        grid-template-rows: 20% 1em 20% 1em auto 1em 5%;
+        grid-template-columns: 60% 1em auto;
+        grid-template-areas: "header header header" ". . ." "nav nav nav" ". . ." "main . aside" ". . ." "footer footer footer";
+    }
+    .container>header {
+        grid-area: header;
+        background-color: red;
+    }
+    .container>nav {
+        grid-area: nav;
+        background-color: grey;
+    }
+    .container>section {
+        grid-area: main;
+        background-color: black;
+        color: white;
+    }
+    .container>aside {
+        grid-area: aside;
+        background-color: green;
+    }
+    .container>footer {
+        grid-area: footer;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        grid-template-rows: 10% 1em 20% 1em auto 1em 20% 1em 5%;
+        grid-template-columns: 100%;
+        grid-template-areas: "header" "." "nav" "." "main" "." "aside" "." "footer";
+    }
+    .container>header {
+        grid-area: header;
+        background-color: red;
+    }
+    .container>nav {
+        grid-area: nav;
+        background-color: grey;
+    }
+    .container>section {
+        grid-area: main;
+        background-color: black;
+        color: white;
+    }
+    .container>aside {
+        grid-area: aside;
+        background-color: green;
+    }
+    .container>footer {
+        grid-area: footer;
+    }
+}
